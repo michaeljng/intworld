@@ -1,0 +1,23 @@
+.main
+  .topic= 'i18n ' + t(:app_title)
+  .subtext= t :hello
+  .body= t :welcome_text
+  .changer
+    .changer-text= t :ask_translate
+    %img{ :src => t(:flag) }
+    %select{ :name => 'language', :id => 'dropdown', :class => locale }
+      - @lang_list.each do |c|
+        %option{ :value => c[1] }
+          = h c[0]
+    %button{ :id => 'selector' }
+      = t :translate
+
+:javascript
+  $(function() {
+    $target = $('#dropdown').attr('class')
+    $('#dropdown').val($target)
+
+    $('#selector').on('click', function () {
+      window.location = '/?locale=' + $('#dropdown').val()
+    })
+  })
