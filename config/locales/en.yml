@@ -1,30 +1,12 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   app_title: "Rails Application"
   ask_translate: "Need to change the language?"
   flag: "http://i.imgur.com/X5K3M9H.png"
   hello: "Hello!"
   language_name: "English"
+  page_about: "About"
+  page_contact_us: "Contact Us"
+  page_home: "Home"
   translate: "Translate"
   welcome_text: "Welcome to the website! This is a sample page that will change based on the language chosen."
 esp:
@@ -33,5 +15,8 @@ esp:
   flag: "http://i.imgur.com/jG4y6Uq.png"
   hello: "¡Hola!"
   language_name: "Español"
+  page_about: "Sobre Nosotros"
+  page_contact_us: "Contáctenos"
+  page_home: "Página Principal"
   translate: "Traducir"
   welcome_text: "¡Bienvenidos a la web! Esta es una página de ejemplo que cambiará según el idioma elegido."

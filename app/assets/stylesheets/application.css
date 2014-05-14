@@ -1,20 +1,37 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html {
+  background: url(http://i.imgur.com/yVGW4mc.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.menu {
+  background-color: rgba(0,0,0,0.7);
+  font-size: 14px;
+  height: 20px;
+  margin: auto;
+  margin-left: -8px;
+  padding-left: 10px;
+  padding-top: 5px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.menu-i {
+  display: inline;
+  margin-left: 10px;
+}
+.menu-i a {
+  color: #FFF;
+  text-decoration: none;
+}
+.menu-i a:hover {
+  color: #EEE;
+  text-decoration: underline;
+}
 .floating {
-  color: #DDD;
+  color: rgba(0,0,0,0.7);
   font-family: Helvetica;
   font-size: 90px;
   font-weight: bold;
@@ -24,8 +41,7 @@
   margin-top: -81px;
 }
 .main {
-  background-color: #EEE;
-  border-left: 20px solid #DDD;
+  background-color: rgba(0,0,0,0.7);
   margin: 220px auto;
   padding: 10px;
   width: 700px;
@@ -47,14 +63,15 @@
 }
 .subtext,
 .body,
-.changer-text {
+.changer-text,
+.menu {
   font-family: Helvetica;
 }
 .topic,
 .subtext,
 .body,
 .changer-text {
-  color: #666;
+  color: #FFF;
 }
 .changer {
   margin-top: 20px;
