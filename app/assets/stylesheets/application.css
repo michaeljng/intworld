@@ -13,10 +13,20 @@
  *= require_tree .
  *= require_self
  */
+.floating {
+  color: #DDD;
+  font-family: Helvetica;
+  font-size: 90px;
+  font-weight: bold;
+  letter-spacing: -5px;
+  position: absolute;
+  margin-left: 330px;
+  margin-top: -81px;
+}
 .main {
   background-color: #EEE;
-  border: 1px solid #666;
-  margin: 100px auto;
+  border-left: 20px solid #DDD;
+  margin: 220px auto;
   padding: 10px;
   width: 700px;
 }
@@ -25,8 +35,11 @@
 }
 .topic {
   font-family: Helvetica;
-  font-size: 16px;
+  font-size: 26px;
   font-weight: bold;
+}
+.subtext {
+  margin-top: 10px;
 }
 #dropdown,
 #dropdown * {
@@ -36,6 +49,12 @@
 .body,
 .changer-text {
   font-family: Helvetica;
+}
+.topic,
+.subtext,
+.body,
+.changer-text {
+  color: #666;
 }
 .changer {
   margin-top: 20px;

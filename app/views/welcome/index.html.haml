@@ -1,4 +1,5 @@
 .main
+  .floating intWorld
   .topic= 'i18n ' + t(:app_title)
   .subtext= t :hello
   .body= t :welcome_text
@@ -12,12 +13,4 @@
     %button{ :id => 'selector' }
       = t :translate
 
-:javascript
-  $(function() {
-    $target = $('#dropdown').attr('class')
-    $('#dropdown').val($target)
-
-    $('#selector').on('click', function () {
-      window.location = '/?locale=' + $('#dropdown').val()
-    })
-  })
+= javascript_include_tag 'welcome'
