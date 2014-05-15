@@ -1,5 +1,5 @@
 html {
-  background: url(http://i.imgur.com/yVGW4mc.jpg) no-repeat center center fixed;
+  background: url() no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,27 +8,60 @@ html {
 }
 .menu {
   background-color: rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 25px rgba(0,0,0,0.8);
   font-size: 14px;
   height: 20px;
   margin: auto;
   margin-left: -8px;
   padding-left: 10px;
-  padding-top: 5px;
+  padding-top: 7px;
   position: absolute;
   width: 100%;
   top: 0;
 }
-.menu-i {
+.menu-i,
+.menu-l,
+.menu-s {
   display: inline;
   margin-left: 10px;
+  margin-right: 10px;
 }
-.menu-i a {
+.menu-i a,
+.menu-l a,
+.menu-s a {
   color: #FFF;
   text-decoration: none;
 }
 .menu-i a:hover {
-  color: #EEE;
+  color: #DDD;
   text-decoration: underline;
+}
+.menu-l,
+.menu-s {
+  background: -webkit-linear-gradient(#345f82, #4a86b8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#345f82, #4a86b8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#345f82, #4a86b8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#345f82, #4a86b8); /* Standard syntax */
+  color: #FFF;
+  float: right;
+  height: 21px;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-top: -7px;
+  padding: 6px 10px 0 10px;
+  text-decoration: none;
+}
+.menu-l {
+  background: -webkit-linear-gradient(#646464, #8a8a8a); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#646464, #8a8a8a); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#646464, #8a8a8a); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#646464, #8a8a8a); /* Standard syntax */
+}
+.menu-l:hover {
+  background: #8a8a8a;
+}
+.menu-s:hover {
+  background: #4a86b8;
 }
 .floating {
   color: rgba(0,0,0,0.7);
@@ -42,6 +75,7 @@ html {
 }
 .main {
   background-color: rgba(0,0,0,0.7);
+  border-radius: 10px;
   margin: 220px auto;
   padding: 10px;
   width: 700px;
@@ -61,16 +95,16 @@ html {
 #dropdown * {
   text-align: left;
 }
-.subtext,
 .body,
 .changer-text,
-.menu {
+.menu,
+.subtext {
   font-family: Helvetica;
 }
-.topic,
-.subtext,
 .body,
-.changer-text {
+.changer-text,
+.subtext,
+.topic {
   color: #FFF;
 }
 .changer {
@@ -81,4 +115,12 @@ html {
 }
 .changer img {
   margin-right: 5px;
+}
+.corner-tag {
+  background-image: url();
+  bottom: 0;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  width: 200px;
 }

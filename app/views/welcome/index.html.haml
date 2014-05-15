@@ -2,6 +2,8 @@
   .menu-i= link_to t(:page_home), "javascript:;"
   .menu-i= link_to t(:page_about), "javascript:;"
   .menu-i= link_to t(:page_contact_us), "javascript:;"
+  .menu-s= link_to t(:sign_up), "javascript:;"
+  .menu-l= link_to t(:log_in), "javascript:;"
 .main
   .floating intWorld
   .topic= 'i18n ' + t(:app_title)
@@ -10,11 +12,12 @@
   .changer
     .changer-text= t :ask_translate
     %img{ :src => t(:flag) }
-    %select{ :name => 'language', :id => 'dropdown', :class => locale }
+    %select{ :name => 'language', :id => 'dropdown', :data => { :locale => locale, :wallpaper => t(:wallpaper), :corner_tag => t(:corner_tag)} }
       - @lang_list.each do |c|
         %option{ :value => c[1] }
           = h c[0]
     %button{ :id => 'selector' }
       = t :translate
+.corner-tag
 
 = javascript_include_tag 'welcome'
