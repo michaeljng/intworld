@@ -73,6 +73,14 @@ html {
   margin-left: 330px;
   margin-top: -81px;
 }
+.float-sub {
+  color: rgba(0,0,0,0.7);
+  font-family: Helvetica;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 520px;
+  margin-top: -90px;
+}
 .main {
   background-color: rgba(0,0,0,0.7);
   border-radius: 10px;
