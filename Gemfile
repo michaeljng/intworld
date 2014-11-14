@@ -40,3 +40,5 @@ gem 'spring',        group: :development
 
 gem "haml"
 gem "sass"
+
+gem 'tzinfo-data'
